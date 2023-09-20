@@ -33,6 +33,10 @@
             int numero = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(condicionales1.Calificaciones(numero));
             */
+
+            Console.WriteLine("Ingresa el numero karnal, del 1 al 10");
+            int numeroUsuario= Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(condicionales1.NumeroAleatorio(numeroUsuario));
         }
     }
 }

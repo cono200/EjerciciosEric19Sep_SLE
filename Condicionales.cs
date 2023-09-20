@@ -68,15 +68,39 @@ namespace sadadsdadd121
         }
 
 
-        public int NumAleatorio(int numero)
+        public string NumeroAleatorio(int numeroUsuario)
         {
+            Random random = new Random();
+            int numeroAleatorio = random.Next(10);
 
+            while (numeroUsuario != numeroAleatorio)
+            {
+                if (numeroAleatorio < numeroUsuario)
+                {
+                    Console.WriteLine("Menos");
+                }
+                else if (numeroAleatorio > numeroUsuario)
+                {
+                    Console.WriteLine("Mayor");
+                }
+
+                
+                Console.Write("No es el numero, intenta otra vez :D ");
+                numeroUsuario = Convert.ToInt32(Console.ReadLine());
+            }
+
+            return "Ese es el numero karnal";
         }
+
+
 
 
 
 
     }
 
+
 }
+
+
 
